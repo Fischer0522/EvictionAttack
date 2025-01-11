@@ -31,6 +31,8 @@ occlum run /bin/redis-server /redis.conf
 
 When connecting to the server using `redis-cli`, you'll receive an `(error) NOAUTH Authentication required` message if you haven't executed `restore_snapshot.sh`. After executing the restore script and restarting the Redis server, you can connect without any authentication requirements.
 
+![A example of eviction attacks on Redis running in an SGX enclave](https://pic-bed-1309931445.cos.ap-nanjing.myqcloud.com/blog/20250111151935.png)
+
 ## The Generalizability of The Attack
 
 It is straightforward to exploit the snapshots to attack more applications.
